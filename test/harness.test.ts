@@ -89,7 +89,7 @@ function createSampleTablesLikeServer(): {
   });
 
   const aepServer = new AepServer({
-    serverInfo: { name: "mock-tables-app", version: "0.1.0" },
+    serverInfo: { name: "mock-tables-app", version: "1.0.0-beta.0" },
     body: [buildTablesNode()],
   });
 
@@ -118,7 +118,7 @@ function createSampleTablesLikeServer(): {
 function createSecondaryNotesServer(): AepServer {
   let noteText = "Initial note";
   const server = new AepServer({
-    serverInfo: { name: "mock-notes-app", version: "0.1.0" },
+    serverInfo: { name: "mock-notes-app", version: "1.0.0-beta.0" },
     body: [
       {
         id: "notes",
@@ -294,7 +294,7 @@ describe("AEP Harness Core & Discovery", () => {
         res.setHeader("Content-Type", "application/json");
         res.end(
           JSON.stringify({
-            protocolVersion: "1.0.0-draft",
+            protocolVersion: "1.0.0-beta.0",
             name: "mock-tables-app",
             aepEndpoint: `ws://127.0.0.1:${addr.port}/aep`,
             transport: "websocket",

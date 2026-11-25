@@ -1,10 +1,14 @@
 {
   "name": "aep-harness",
-  "version": "0.1.0",
+  "version": "1.0.0-beta.0",
   "private": true,
   "description": "Agent Environment Protocol (AEP) multi-endpoint harness (shared core + Web UI)",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgentEnvironmentProtocol/aep-harness.git"
+  },
   "engines": {
     "node": ">=22.0.0"
   },
@@ -29,7 +33,7 @@
     "test": "npm run build && node --test test/harness.test.ts"
   },
   "dependencies": {
-    "aep-node": "file:../aep-node"
+    "aep-node": "github:AgentEnvironmentProtocol/aep-node#v1.0.0-beta.0"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",

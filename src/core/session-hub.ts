@@ -313,7 +313,7 @@ export class AepHarnessHub {
     const client = new AepClient(transport, {
       clientInfo: {
         name: "aep-harness",
-        version: "0.1.0",
+        version: "1.0.0-beta.0",
       },
       capabilities: "aep-core-streaming",
       security,

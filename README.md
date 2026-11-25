@@ -1,6 +1,6 @@
 # AEP Harness (`aep-harness`)
 
-Prototype multi-endpoint **Agent Environment Protocol (AEP)** harness built with [`aep-node`](../aep-node/README.md).
+Prototype multi-endpoint **Agent Environment Protocol (AEP)** harness (`1.0.0-beta.0`) built with [`aep-node`](https://github.com/AgentEnvironmentProtocol/aep-node).
 
 Designed with a transport/UI-agnostic core (`src/core`) that can power **Web**, **Desktop**, and **CLI** frontends, paired today with an interactive zero-bundler **Web Harness** (`src/web`).
 
@@ -24,19 +24,18 @@ npm start
 
 Open `http://127.0.0.1:8790` in your browser.
 
-### Auto-connect to `aep-tables-app` on launch
+### Auto-connect to [`aep-tables-app`](https://github.com/AgentEnvironmentProtocol/aep-tables-app) on launch
 
 Terminal 1 — start `aep-tables-app`:
 
 ```bash
-cd ../aep-apps/aep-tables-app
+# In your aep-tables-app checkout:
 npm start
 ```
 
 Terminal 2 — start `aep-harness` connected to `:8781`:
 
 ```bash
-cd ../../aep-harness
 npm start -- --connect http://127.0.0.1:8781
 ```
 
